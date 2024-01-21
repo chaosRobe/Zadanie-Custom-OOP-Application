@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://5i020oplonk1"]
+
+[ext_resource type="Script" path="res://scripts/hud.gd" id="1_uoswq"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_0he8l"]
+font_size = 64
+
+[node name="HUD" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_uoswq")
+
+[node name="Score" type="Label" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Score: 5555"
+label_settings = SubResource("LabelSettings_0he8l")
